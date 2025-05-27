@@ -276,3 +276,10 @@ nav ul li a:hover {
     .menu-card p { font-size: 0.9rem; }
     .menu-card p.price { font-size: 1rem; }
 }
+
+.menu-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+}
