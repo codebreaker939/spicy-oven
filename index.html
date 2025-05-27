@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spicy Oven Restaurant</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <!-- Sticky Navbar -->
+    <nav id="navbar">
+        <div class="container">
+            <h1>Spicy Oven</h1>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#location">Location</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Welcome Banner -->
+    <section id="home">
+        <div class="container">
+            <h1>Welcome to Spicy Oven</h1>
+            <p>A Symphony of Flavors Crafted with Passion</p>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu">
+        <div class="container">
+            <h2>Our Menu</h2>
+
+            <!-- Starters -->
+            <h3>Starters</h3>
+            <div class="menu-grid">
+                <div class="menu-card">
+                    <h4>Spring Rolls</h4>
+                    <p>Crispy rolls filled with vibrant vegetables and aromatic spices.</p>
+                    <p class="price">$6.99</p>
+                </div>
+                <div class="menu-card recommended">
+                    <h4>Spicy Chicken Wings</h4>
+                    <p>Juicy wings coated in our signature fiery chili glaze.</p>
+                    <p class="price">$8.99</p>
+                </div>
+            </div>
+
+            <!-- Main Course -->
+            <h3>Main Course</h3>
+            <div class="menu-grid">
+                <div class="menu-card recommended">
+                    <h4>Butter Chicken</h4>
+                    <p>Tender chicken simmered in a rich, creamy tomato sauce.</p>
+                    <p class="price">$14.99</p>
+                </div>
+                <div class="menu-card">
+                    <h4>Vegetable Biryani</h4>
+                    <p>Fragrant basmati rice layered with spiced vegetables.</p>
+                    <p class="price">$12.99</p>
+                </div>
+            </div>
+
+            <!-- Desserts -->
+            <h3>Desserts</h3>
+            <div class="menu-grid">
+                <div class="menu-card">
+                    <h4>Gulab Jamun</h4>
+                    <p>Sweet dumplings drenched in rose-infused syrup.</p>
+                    <p class="price">$4.99</p>
+                </div>
+                <div class="menu-card recommended">
+                    <h4>Choco Lava Cake</h4>
+                    <p>Warm cake with a molten chocolate core.</p>
+                    <p class="price">$6.99</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>
+                Since 2010, Spice Haven has been a beacon of culinary excellence, where tradition meets innovation. Our chefs craft each dish with the finest ingredients, weaving stories of flavor that delight and inspire.
+            </p>
+        </div>
+    </section>
+
+    <!-- Location Section -->
+    <section id="location">
+        <div class="container">
+            <h2>Find Us</h2>
+            <p>123 Flavor Street, Food City, FC 12345</p>
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509364!2d144.9537363153167!3d-37.81627977975159!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf0727a3b1b9b9c7!2s123%20Bourke%20St%2C%20Melbourne%20VIC%203000%2C%20Australia!5e0!3m2!1sen!2sus!4v1635781234567!5m2!1sen!2sus" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- JavaScript for Sticky Navbar -->
+    <script>
+        window.addEventListener('scroll', () => {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 0) {
+                navbar.classList.add('sticky');
+            } else {
+                navbar.classList.remove('sticky');
+            }
+        });
+    </script>
+</body>
+</html>
